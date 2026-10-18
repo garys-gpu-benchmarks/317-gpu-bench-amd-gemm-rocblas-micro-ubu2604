@@ -43,7 +43,7 @@ sample_index,status,function,dtype,transposeA,transposeB,M,N,K,lda,ldb,ldc,batch
 
 ## Metrics
 
-- **#1: Achieved compute throughput** — stored as `achieved_compute_tflops`.
+- **#1: Achieved compute throughput, TFLOP/s** — stored as `achieved_compute_tflops`.
 - **#2: Kernel execution time** — stored as `kernel_time_msec`.
 - **#3: Minimum operand traffic, GB/s** — stored as `minimum_operand_traffic_gb_s`.
 - **#4: Relative L1 of checked columns** — stored as `relative_l1_checked_columns`.
