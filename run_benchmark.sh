@@ -16,12 +16,11 @@ capture_benchmark_run_command_submitted "$@"
 
 usage() {
   cat <<'USAGE'
+
 Usage: bash run_benchmark.sh [OPTIONS]
 
 Workload Name:          GEMM / rocBLAS Microbenchmark.
 Main Goal:              Measure rocBLAS GEMM throughput.
-Validation Objective:   Validates rocBLAS GEMM throughput and, with norm_check=1, numerical
-                        correctness against the rocblas-bench CPU reference.
 Command Tools Executed: Run the repository-local rocblas-bench built from ROCm rocBLAS source by
                         scripts/build.sh (rocm_compile_rocblas_bench).
 
