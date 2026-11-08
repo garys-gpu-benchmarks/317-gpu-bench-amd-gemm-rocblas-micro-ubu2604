@@ -19,10 +19,10 @@ usage() {
 
 Usage: bash run_benchmark.sh [OPTIONS]
 
-Workload Name:          GEMM / rocBLAS Microbenchmark.
-Main Goal:              Measure rocBLAS GEMM throughput.
+Workload Name:          GEMM / rocBLAS Microbenchmark
+Main Goal:              Measure rocBLAS GEMM throughput
 Command Tools Executed: Run the repository-local rocblas-bench built from ROCm rocBLAS source by
-                        scripts/build.sh (rocm_compile_rocblas_bench).
+                        scripts/build.sh (rocm_compile_rocblas_bench)
 
 Profiles (default: --smoke):
   --smoke                       Run smoke profile

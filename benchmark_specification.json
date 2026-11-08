@@ -205,14 +205,14 @@
     "value": "MI300X"
   },
   {
-    "field_name": "Raw Output Format",
-    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
-    "value": "rocblas-bench stdout in rocblas_bench.txt plus one CSV row written twice"
-  },
-  {
     "field_name": "Primary Record Granularity",
     "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
     "value": "one GEMM configuration, written as two identical samples"
+  },
+  {
+    "field_name": "Raw Output Format",
+    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
+    "value": "rocblas-bench stdout in rocblas_bench.txt plus one CSV row written twice"
   },
   {
     "field_name": "Raw Output Example",
@@ -225,14 +225,14 @@
     "value": "achieved_compute_tflops, kernel_time_msec, minimum_operand_traffic_gb_s, relative_l1_checked_columns, norm_error_1, cpu_gflops, rocblas_gflops, rocblas_gemm_us"
   },
   {
-    "field_name": "Success Criteria",
-    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
-    "value": "rocblas-bench exits 0 and prints a rocblas-Gflops/us row; with norm_check=1 it also prints CPU-Gflops and norm_error_1"
-  },
-  {
     "field_name": "Parser and Normalization Notes",
     "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
     "value": "Columns are read by name from the rocblas-bench CSV header, so extra columns in other rocBLAS versions are ignored. With norm_check=0, cpu_gflops and norm_error_1 are na (norm_check is 0). Before 2026-10-01 this collector timed torch.matmul and did not run rocblas-bench. norm_error_2 is omitted because rocblas-bench does not print an L2 norm"
+  },
+  {
+    "field_name": "Success Criteria",
+    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
+    "value": "rocblas-bench exits 0 and prints a rocblas-Gflops/us row; with norm_check=1 it also prints CPU-Gflops and norm_error_1"
   },
   {
     "field_name": "Hardware Config",
