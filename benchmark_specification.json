@@ -40,6 +40,11 @@
     "value": "Run the repository-local rocblas-bench built from ROCm rocBLAS source by scripts/build.sh (rocm_compile_rocblas_bench)"
   },
   {
+    "field_name": "Execution Description With Parameters",
+    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
+    "value": "Runs the repository-local rocblas-bench for C = alpha*(A*B) + beta*C. dtype, M, N, K, transposeA, transposeB, alpha, beta, lda, ldb, ldc, and batch_count come from yaml. warmup_iters is passed as --cold_iters and norm_check as -v. -w and --norm_check are never passed. num_iterations is the timed repeat count. output_format: csv"
+  },
+  {
     "field_name": "Metrics",
     "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
     "value": "#1: Achieved compute throughput, TFLOP/s (achieved_compute_tflops); #2: Kernel execution time (kernel_time_msec); #3: Minimum operand traffic, GB/s (minimum_operand_traffic_gb_s); #4: Relative L1 of checked columns (relative_l1_checked_columns); #5: CPU reference GFLOPS (cpu_gflops)"
@@ -173,11 +178,6 @@
     "field_name": "Command Methodology",
     "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
     "value": "Run rocblas-bench -f gemm (gemm_strided_batched when batch_count > 1) for the yaml dtype, M/N/K, transposes, alpha/beta, and leading dimensions, with warmup_iters as --cold_iters, num_iterations as -i, and norm_check as -v. Parse its rocblas-Gflops, us, CPU-Gflops, and norm_error_1 columns by header name"
-  },
-  {
-    "field_name": "Execution Description With Parameters",
-    "source_file": "BenchmarkSpecDefinitions.xlsx::Workload_Definitions",
-    "value": "Runs the repository-local rocblas-bench for C = alpha*(A*B) + beta*C. dtype, M, N, K, transposeA, transposeB, alpha, beta, lda, ldb, ldc, and batch_count come from yaml. warmup_iters is passed as --cold_iters and norm_check as -v. -w and --norm_check are never passed. num_iterations is the timed repeat count. output_format: csv"
   },
   {
     "field_name": "Execution Domain",
