@@ -184,7 +184,6 @@ def main() -> int:
     # One rocblas-bench run already averages hot_iters calls: one sample row.
     writer.writerow({"sample_index": 0, **row})
     Path(args.raw_file).write_text(buf.getvalue(), encoding="utf-8")
-    print(buf.getvalue(), end="")
     return 0
 
 
